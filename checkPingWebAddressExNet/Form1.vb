@@ -1,24 +1,4 @@
-'
-'
-''Title: Check if Web Address Destination is Available/Reachable
-'
-''By: Jason Hensley
-'
-''Contact: mailto:vbcodesource@gmail.com
-'
-''Wepage: http://www.vbcodesource.com and http://www.vbforfree.com
-'
-''Description: This is nothing more than a example of how to use the IsDestinationReachable API 
-'Function to check the specified web address to see if the destination was available/reachable 
-'or not. It displays the in and out speed for reaching the desctination along with the type of
-'network available to be used. I guess in a sense you can consider this a ping to see if the
-'network is available but you wouldn't be able to get a accurate roundTripTime since the API
-'will also retrieve the In and out speed which can take a few seconds to complete. Still, if
-'you only want to know if the address/site is available then this should work just fine for that.
-'
-'Copyright: 2008, March 7th
-'
-'
+
 Public Class frmMain
     Inherits System.Windows.Forms.Form
 
@@ -170,7 +150,7 @@ Public Class frmMain
 
         Lan_Network = 1
         Wan_Network = 2
-        Aol_Network = 4 'This is pretty much obsolete since it would only be used with Win 95/98.
+        'Aol_Network = 4 'This is pretty much obsolete since it would only be used with Win 95/98.
         No_Network = 0
 
     End Enum
