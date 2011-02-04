@@ -1,0 +1,22 @@
+<?xml version="1.0" encoding="UTF-8"?><?xml-stylesheet type='text/xsl' href='_UpgradeReport_Files/UpgradeReport.xslt'?><UpgradeLog>
+<Properties><Property Name="Solution" Value="checkPingWebAddressExNet">
+</Property><Property Name="Solution File" Value="C:\Sourcesafe\Misc VB\checkPingWebAddressExNet\checkPingWebAddressExNet.sln">
+</Property><Property Name="Date" Value="Friday, February 04, 2011">
+<<<<<<< HEAD
+</Property><Property Name="Time" Value="17:03 PM">
+</Property></Properties><Event ErrorLevel="0" Project="checkPingWebAddressExNet" Source="checkPingWebAddressExNet\checkPingWebAddressExNet.vbproj" Description="Project converted successfully">
+=======
+</Property><Property Name="Time" Value="13:30 PM">
+</Property></Properties><Event ErrorLevel="0" Project="" Source="checkPingWebAddressExNet.sln" Description="File successfully backed up as C:\Sourcesafe\Misc VB\checkPingWebAddressExNet\Backup\checkPingWebAddressExNet.sln">
+</Event><Event ErrorLevel="0" Project="checkPingWebAddressExNet" Source="checkPingWebAddressExNet\checkPingWebAddressExNet.vbproj" Description="Project file successfully backed up as C:\Sourcesafe\Misc VB\checkPingWebAddressExNet\Backup\checkPingWebAddressExNet\checkPingWebAddressExNet.vbproj">
+</Event><Event ErrorLevel="0" Project="checkPingWebAddressExNet" Source="checkPingWebAddressExNet\checkPingWebAddressExNet.vbproj.user" Description="Project user file successfully backed up as C:\Sourcesafe\Misc VB\checkPingWebAddressExNet\Backup\checkPingWebAddressExNet\checkPingWebAddressExNet.vbproj.user">
+</Event><Event ErrorLevel="0" Project="checkPingWebAddressExNet" Source="checkPingWebAddressExNet\AssemblyInfo.vb" Description="File successfully backed up as C:\Sourcesafe\Misc VB\checkPingWebAddressExNet\Backup\checkPingWebAddressExNet\AssemblyInfo.vb">
+</Event><Event ErrorLevel="0" Project="checkPingWebAddressExNet" Source="checkPingWebAddressExNet\Form1.vb" Description="File successfully backed up as C:\Sourcesafe\Misc VB\checkPingWebAddressExNet\Backup\checkPingWebAddressExNet\Form1.vb">
+</Event><Event ErrorLevel="0" Project="checkPingWebAddressExNet" Source="checkPingWebAddressExNet\Form1.resx" Description="File successfully backed up as C:\Sourcesafe\Misc VB\checkPingWebAddressExNet\Backup\checkPingWebAddressExNet\Form1.resx">
+</Event><Event ErrorLevel="0" Project="checkPingWebAddressExNet" Source="checkPingWebAddressExNet\checkPingWebAddressExNet.vbproj" Description="Project converted successfully">
+>>>>>>> d5ac76895d6fb086b5b7648a5f9193703642540b
+</Event><Event ErrorLevel="3" Project="checkPingWebAddressExNet" Source="checkPingWebAddressExNet\checkPingWebAddressExNet.vbproj" Description="Converted">
+</Event><Event ErrorLevel="0" Project="" Source="checkPingWebAddressExNet.sln" Description="Solution converted successfully">
+</Event><Event ErrorLevel="3" Project="" Source="checkPingWebAddressExNet.sln" Description="Converted">
+</Event><Event ErrorLevel="0" Project="checkPingWebAddressExNet" Source="checkPingWebAddressExNet\checkPingWebAddressExNet.vbproj" Description="Scan complete: Upgrade not required for project files.">
+</Event></UpgradeLog>
