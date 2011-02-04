@@ -72,78 +72,78 @@ Public Class frmMain
         'btnCheck
         '
         Me.btnCheck.Font = New System.Drawing.Font("Microsoft Sans Serif", 8.25!, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, CType(0, Byte))
-        Me.btnCheck.Location = New System.Drawing.Point(176, 64)
+        Me.btnCheck.Location = New System.Drawing.Point(211, 74)
         Me.btnCheck.Name = "btnCheck"
-        Me.btnCheck.Size = New System.Drawing.Size(304, 24)
+        Me.btnCheck.Size = New System.Drawing.Size(365, 28)
         Me.btnCheck.TabIndex = 0
         Me.btnCheck.Text = "Check the Specified Address"
         '
         'lblTime
         '
         Me.lblTime.BorderStyle = System.Windows.Forms.BorderStyle.FixedSingle
-        Me.lblTime.Location = New System.Drawing.Point(176, 24)
+        Me.lblTime.Location = New System.Drawing.Point(211, 28)
         Me.lblTime.Name = "lblTime"
-        Me.lblTime.Size = New System.Drawing.Size(304, 16)
+        Me.lblTime.Size = New System.Drawing.Size(365, 18)
         Me.lblTime.TabIndex = 1
         Me.lblTime.Text = "Time to Reach and Return Data:"
         '
         'txtAddress
         '
-        Me.txtAddress.Location = New System.Drawing.Point(8, 64)
+        Me.txtAddress.Location = New System.Drawing.Point(10, 74)
         Me.txtAddress.Name = "txtAddress"
-        Me.txtAddress.Size = New System.Drawing.Size(152, 20)
+        Me.txtAddress.Size = New System.Drawing.Size(182, 22)
         Me.txtAddress.TabIndex = 2
-        Me.txtAddress.Text = "www.vbcodesource.com"
+        Me.txtAddress.Text = "www.github.com"
         '
         'lblAddress
         '
         Me.lblAddress.Font = New System.Drawing.Font("Microsoft Sans Serif", 8.25!, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, CType(0, Byte))
-        Me.lblAddress.Location = New System.Drawing.Point(8, 8)
+        Me.lblAddress.Location = New System.Drawing.Point(10, 9)
         Me.lblAddress.Name = "lblAddress"
-        Me.lblAddress.Size = New System.Drawing.Size(160, 56)
+        Me.lblAddress.Size = New System.Drawing.Size(192, 65)
         Me.lblAddress.TabIndex = 3
         Me.lblAddress.Text = "Address to Check/Reach/Ping. You can use IP/URL address or UNC name."
         '
         'lblDown
         '
         Me.lblDown.BorderStyle = System.Windows.Forms.BorderStyle.FixedSingle
-        Me.lblDown.Location = New System.Drawing.Point(176, 40)
+        Me.lblDown.Location = New System.Drawing.Point(211, 46)
         Me.lblDown.Name = "lblDown"
-        Me.lblDown.Size = New System.Drawing.Size(152, 16)
+        Me.lblDown.Size = New System.Drawing.Size(183, 19)
         Me.lblDown.TabIndex = 4
         Me.lblDown.Text = "Down Speed:"
         '
         'lblUp
         '
         Me.lblUp.BorderStyle = System.Windows.Forms.BorderStyle.FixedSingle
-        Me.lblUp.Location = New System.Drawing.Point(328, 40)
+        Me.lblUp.Location = New System.Drawing.Point(394, 46)
         Me.lblUp.Name = "lblUp"
-        Me.lblUp.Size = New System.Drawing.Size(152, 16)
+        Me.lblUp.Size = New System.Drawing.Size(182, 19)
         Me.lblUp.TabIndex = 5
         Me.lblUp.Text = "Up Speed:"
         '
         'lblSuccess
         '
         Me.lblSuccess.BorderStyle = System.Windows.Forms.BorderStyle.FixedSingle
-        Me.lblSuccess.Location = New System.Drawing.Point(176, 8)
+        Me.lblSuccess.Location = New System.Drawing.Point(211, 9)
         Me.lblSuccess.Name = "lblSuccess"
-        Me.lblSuccess.Size = New System.Drawing.Size(192, 16)
+        Me.lblSuccess.Size = New System.Drawing.Size(231, 19)
         Me.lblSuccess.TabIndex = 6
         Me.lblSuccess.Text = "Successful:"
         '
         'lblNetwork
         '
         Me.lblNetwork.BorderStyle = System.Windows.Forms.BorderStyle.FixedSingle
-        Me.lblNetwork.Location = New System.Drawing.Point(280, 8)
+        Me.lblNetwork.Location = New System.Drawing.Point(336, 9)
         Me.lblNetwork.Name = "lblNetwork"
-        Me.lblNetwork.Size = New System.Drawing.Size(200, 16)
+        Me.lblNetwork.Size = New System.Drawing.Size(240, 19)
         Me.lblNetwork.TabIndex = 7
         Me.lblNetwork.Text = "Network Type Used:"
         '
         'frmMain
         '
-        Me.AutoScaleBaseSize = New System.Drawing.Size(5, 13)
-        Me.ClientSize = New System.Drawing.Size(490, 96)
+        Me.AutoScaleBaseSize = New System.Drawing.Size(6, 15)
+        Me.ClientSize = New System.Drawing.Size(586, 114)
         Me.Controls.Add(Me.lblNetwork)
         Me.Controls.Add(Me.lblSuccess)
         Me.Controls.Add(Me.lblUp)
@@ -156,25 +156,52 @@ Public Class frmMain
         Me.MaximizeBox = False
         Me.Name = "frmMain"
         Me.StartPosition = System.Windows.Forms.FormStartPosition.CenterScreen
-        Me.Text = "  Check if Web Address is Available using API - 2002/2003"
+        Me.Text = "  Check if Web Address is Available using API"
         Me.ResumeLayout(False)
+        Me.PerformLayout()
 
     End Sub
 
 #End Region
     '
-    '    'The type of network the API used to reach its destination.    Enum networkType
+    '
+    'The type of network the API used to reach its destination.
+    Enum networkType
+
         Lan_Network = 1
         Wan_Network = 2
         Aol_Network = 4 'This is pretty much obsolete since it would only be used with Win 95/98.
         No_Network = 0
 
-    End Enum    '    '    'This structure is passed to the 2nd parameter in the isDestination API call ByReference since    'the API will Put info IN the Structure and NOT read data FROM the structure.    Private Structure qocStructure        '        'Used to specifiy the structure's size. The API call will use this value first when you        'call to get the size of the structure being used, and then it will set this value to         'the size of the structure with the data in the structure.        Dim structureSize As Int32        '        'Will hold the value for the type of network.        Dim networkFlags As networkType        '        'Will contain the speed in bytes per second coming from the destination.        Dim inSpeed As Int32        '        'Will contain the speed in bytes per second going to the destination.        Dim outSpeed As Int32    End Structure
+    End Enum
+    '
+    '
+    'This structure is passed to the 2nd parameter in the isDestination API call ByReference since
+    'the API will Put info IN the Structure and NOT read data FROM the structure.
+    Private Structure qocStructure
+        '
+        'Used to specifiy the structure's size. The API call will use this value first when you
+        'call to get the size of the structure being used, and then it will set this value to 
+        'the size of the structure with the data in the structure.
+        Dim structureSize As Int32
+        '
+        'Will hold the value for the type of network.
+        Dim networkFlags As networkType
+        '
+        'Will contain the speed in bytes per second coming from the destination.
+        Dim inSpeed As Int32
+        '
+        'Will contain the speed in bytes per second going to the destination.
+        Dim outSpeed As Int32
+
+    End Structure
     '
     'The API call to get the info we want. This API function is NOT supported by the Windows Vista
     'Operating System. The destination address can be a URL Address, IP Address, or UNC 
     '(Universal Naming Convention) name.
-    Private Declare Function IsDestinationReachable Lib "sensapi.dll" Alias _        "IsDestinationReachableA" (ByVal destinationAddress As String, ByRef qocInfoStructure _            As qocStructure) As Int32
+    Private Declare Function IsDestinationReachable Lib "sensapi.dll" Alias _
+        "IsDestinationReachableA" (ByVal destinationAddress As String, ByRef qocInfoStructure _
+            As qocStructure) As Int32
     '
     '
     Private Sub btnCheck_Click(ByVal sender As System.Object, ByVal e As System.EventArgs) Handles btnCheck.Click
