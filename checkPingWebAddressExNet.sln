@@ -1,21 +1,19 @@
-Microsoft Visual Studio Solution File, Format Version 8.00
+Microsoft Visual Studio Solution File, Format Version 10.00
+# Visual Studio 2008
 Project("{F184B08F-C81C-45F6-A57F-5ABD9991F28F}") = "checkPingWebAddressExNet", "checkPingWebAddressExNet\checkPingWebAddressExNet.vbproj", "{56258619-D082-431B-9789-F51F2AF65912}"
-	ProjectSection(ProjectDependencies) = postProject
-	EndProjectSection
 EndProject
 Global
-	GlobalSection(SolutionConfiguration) = preSolution
-		Debug = Debug
-		Release = Release
+	GlobalSection(SolutionConfigurationPlatforms) = preSolution
+		Debug|Any CPU = Debug|Any CPU
+		Release|Any CPU = Release|Any CPU
 	EndGlobalSection
-	GlobalSection(ProjectConfiguration) = postSolution
-		{56258619-D082-431B-9789-F51F2AF65912}.Debug.ActiveCfg = Debug|.NET
-		{56258619-D082-431B-9789-F51F2AF65912}.Debug.Build.0 = Debug|.NET
-		{56258619-D082-431B-9789-F51F2AF65912}.Release.ActiveCfg = Release|.NET
-		{56258619-D082-431B-9789-F51F2AF65912}.Release.Build.0 = Release|.NET
+	GlobalSection(ProjectConfigurationPlatforms) = postSolution
+		{56258619-D082-431B-9789-F51F2AF65912}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{56258619-D082-431B-9789-F51F2AF65912}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{56258619-D082-431B-9789-F51F2AF65912}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{56258619-D082-431B-9789-F51F2AF65912}.Release|Any CPU.Build.0 = Release|Any CPU
 	EndGlobalSection
-	GlobalSection(ExtensibilityGlobals) = postSolution
-	EndGlobalSection
-	GlobalSection(ExtensibilityAddIns) = postSolution
+	GlobalSection(SolutionProperties) = preSolution
+		HideSolutionNode = FALSE
 	EndGlobalSection
 EndGlobal
