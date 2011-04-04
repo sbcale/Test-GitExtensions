@@ -2,6 +2,9 @@
 
 Imports System
 
-Public Class clsTestBranch
+Namespace Animal
 
-End Class
+    Public Class clsTestBranch
+
+    End Class
+End Namespace

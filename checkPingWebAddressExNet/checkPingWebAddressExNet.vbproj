@@ -100,6 +100,7 @@
       <SubType>Code</SubType>
     </Compile>
     <Compile Include="clsTestBranch.vb" />
+    <Compile Include="clsTestBranch2.vb" />
     <Compile Include="Form1.vb">
       <SubType>Form</SubType>
     </Compile>
